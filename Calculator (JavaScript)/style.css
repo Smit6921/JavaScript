@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    margin-top: 100px;
+    width: 400px;
+    height: 420px;
+    margin-left: 30%;
+    background-color: black;
+    padding: 10px 70px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+.div1{
+    padding: 20px 10px;
+}
+
+.forGray{
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: rgb(208, 207, 207);
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 6px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.forOrange{
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 4px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.normalBtn{
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 15px;
+    text-align: center;
+    border: 2px solid white;
+}   
+
+.forInput{
+    border: px solid white ;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px ;
+    text-align: right;
+}
