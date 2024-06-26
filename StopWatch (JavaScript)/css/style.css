@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.ForImg{
+    margin: 20px 0px 20px 450px;
+}
+.ForH1{
+    position: absolute;
+    bottom: 47%;
+    left: 540px;
+    font-size: 40px;
+}
+
+.forBtnClass{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 450px;
+    gap: 40px;
+}
+.ForBTNS{
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+.ForBTNS:hover{
+    background-color: aqua;
+}
+
+.Foricons{
+    font-size: 28px;
+    color: blue;
+}
