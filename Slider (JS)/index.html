@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .slider{
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            top: 150px;
+        }
+        .forImg{
+            width: 200px;
+            height: 200px;
+        }
+        .slides{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+        button{
+            position: absolute;
+            top: 20%;
+            transform: translateY(-50%);
+            color: black;
+            background-color: bisque;
+            padding: 20px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+        }
+        button:hover{
+            color: bisque;
+            background-color: black;
+        }
+        .prev{
+            left: 525px;
+            top: 260px;
+        }
+        .next{
+            left: 784px;
+            top: 260px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img class="forImg" src="./Image/secFour im1.jpg" alt="">
+            <img class="forImg" src="./Image/secFour im2.jpg" alt="">
+            <img class="forImg" src="./Image/secFour im3.jpg" alt="">
+            <img class="forImg" src="./Image/secFour im4.jpg" alt="">
+            <img class="forImg" src="./Image/SecThree Img 1.jpg" alt="">
+            <img class="forImg" src="./Image/SecThree Img 2.jpg" alt="">
+            <img class="forImg" src="./Image/SecThree Img 3.jpg" alt="">
+            <img class="forImg" src="./Image/Section One Pic.jpg" alt="">
+            <img class="forImg" src="./Image/thorny plant.jpg" alt="">
+        </div>
+    </div>    
+
+    <button id="prev" class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button id="next" class="next"><i class="fa-solid fa-arrow-right"></i></button>
+
+
+
+
+
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
