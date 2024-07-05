@@ -19,7 +19,7 @@ const submitForm = () => {
 
     localStorage.setItem("Data", JSON.stringify(arr)) 
 
-event.target.reset()
+// event.target.reset()
 }
 
 
