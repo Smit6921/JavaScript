@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Method in DOM</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            background-color: palegoldenrod;
+            border: 2px solid red;
+        }
+
+        #test{
+            width: 300px;
+            height: 200px;
+            background-color: palegoldenrod;
+            border: 2px solid red;
+        }
+
+        #abc{
+            width: 300px;
+            height: 200px;
+            background-color: palegoldenrod;
+            border: 2px solid red;
+        }
+
+        .forDisplay{
+            display: flex;
+            gap: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner" class="inner">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates repellat laudantium hic id iste optio repudiandae dolor aliquam itaque iure.</p>
+            <div id="box1">BOX-1</div>
+            <div id="box2">Box-2</div>
+        </div>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <h1>Append Child :-</h1>
+    <div id="box">
+        <p>Hello</p>
+        <h3>World</h3>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <h2>InsertAdjacentElement :-</h2>
+
+    <div id="test">
+        <p>HELLO WORLD !!</p>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <h2>InsertAdjacentHTML :-</h2>
+
+    <div id="abc">
+        <p>Hello Wolrd !!!</p>
+    </div>
+
+
+
+    <br> <br> <br> <br>
+
+
+    <h2>Replace Child :-</h2>
+
+    <div class="forDisplay">
+        <div>
+            <h3>After ReplaceChild :- </h3>
+            <ul id="list">
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Guava</li>
+                <li>Dragon Fruit</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Actual List :- </h3>
+            <ul>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Guava</li>
+                <li>Dragon Fruit</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <br> <br>
+
+
+    <h2>Remove Child :-</h2>
+
+    <div class="forDisplay">
+        <div>
+            <h3>After RemoveChild :- </h3>
+            <ul id="list1">
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Guava</li>
+                <li>Dragon Fruit</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Actual List :- </h3>
+            <ul>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Guava</li>
+                <li>Dragon Fruit</li>
+            </ul>
+        </div>
+    </div>
+
+   
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
