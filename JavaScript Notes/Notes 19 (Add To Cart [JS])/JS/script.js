@@ -24,7 +24,7 @@ productDetails.forEach((product , index) => {
         <p> ${product.name} </p>
         <p class="price"> ${product.price} </p>
         <button class="add-to-cart"> Add To Cart </button>
-    `
+    `;
 
     productContainer.appendChild(productDiv)
 
@@ -35,37 +35,48 @@ productDetails.forEach((product , index) => {
             name : product.name,
             price : product.price,
             image : product.image
-        })
-        totalSum += product.price
-        updateCart()
-    })
-})
+        });
+        totalSum += product.price;
+        updateCart();
+    });
+});
 
-const updateCart = () => {
-    const cartlist = document.getElementById("cart-item")
+function updateCart () {
+    const cartlist = document.getElementById("cart-item");
 
-    const totalEle = document.getElementById("total-price")
+    const totalEle = document.getElementById("total-price");
 
-    cartlist.innerHTML = ""
+    cartlist.innerHTML = "";
 
     cartItem.forEach((item , index) => {
-        const li = document.createElement("li")
-        const img = document.createElement("img")
+        const li = document.createElement("li");
+        const img = document.createElement("img");
 
-        img.src = item.image
-        img.alt = item.name
-        img.style.width = "60px"
+        img.src = item.image;
+        img.alt = item.name;
+        img.style.width = "60px";
+        img.style.marginRight = "20px";
         
-        li.appendChild(img)
+        li.appendChild(img);
 
-        const details = document.createElement("span")
+        const details = document.createElement("span");
 
-        details.textContent = item.name + "-$" + item.price
+        details.textContent = item.name + " - $" + item.price;
+        li.appendChild(details);
 
-        li.appendChild(details)
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("delete-item");
+        deleteButton.addEventListener('click' , () => {
+            cartItem.splice(index , 1);
+            totalSum -= item.price;
+            updateCart()
+        })
+
+        li.appendChild(deleteButton)
 
         cartlist.appendChild(li)
-    })
+    });
 
     totalEle.textContent = "$" + totalSum
 }

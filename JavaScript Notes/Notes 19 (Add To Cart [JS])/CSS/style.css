@@ -47,5 +47,10 @@ button{
 }
 
 .sidebar p{
-    font-size: 15px;
+    font-weight: bold;
 }
+
+.delete-item{
+    margin-left: 20px;
+}
+
